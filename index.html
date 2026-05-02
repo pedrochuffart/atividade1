@@ -1,159 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="Portfólio interativo demonstrando elementos semânticos de HTML5 e CSS3.">
+    <meta name="description" content="Página principal do meu portfólio profissional em HTML5.">
     <meta name="author" content="Seu Nome">
     
-    <title>Meu Currículo Semântico | Profissional</title>
+    <title>Meu Site | Home</title>
 
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/25/25694.png" type="image/png">
     
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
 
     <header>
-        <h1>Meu Site Profissional</h1>
-        <p>Esse é um site estruturado com semântica HTML5.</p>
         <nav>
-            <ul>
-                <li><a href="#listas">Listas</a></li>
-                <li><a href="#multimidia">Multimídia</a></li>
-                <li><a href="#tabela">Tabela</a></li>
+            <ul style="display: flex; list-style: none; gap: 15px;">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#listas">Conteúdo</a></li>
                 <li><a href="#formulario">Contato</a></li>
+                <li><a href="index2.html" style="color: blue; font-weight: bold;">Ir para Página 2 →</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="links">
-            <h2>Links Úteis</h2>
-            <nav>
-                <a href="#secao">Ir para seção interna</a> <br><br>
-                <a href="https://www.google.com" target="_blank">Google</a> <br>
-                <a href="https://www.youtube.com" target="_blank">YouTube</a> <br>
-                <a href="index2.html">Outra página</a>
-            </nav>
+    <main id="inicio">
+        <section>
+            <h1>Bem-vindo ao Meu Site</h1>
+            <p>Esse é um site simples feito em HTML com foco em semântica.</p>
         </section>
 
         <section id="listas">
-            <h2>Organização de Rotina</h2>
-            <h3>Lista ordenada</h3>
+            <h2>Minhas Atividades</h2>
+            <h3>Lista organizada</h3>
             <ol>
-                <li>Estudar</li>
-                <li>Comer</li>
-                <li>Dormir</li>
+                <li>Estudar HTML5</li>
+                <li>Praticar CSS3</li>
+                <li>Aprender JavaScript</li>
             </ol>
 
             <h3>Lista não ordenada</h3>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li>Responsividade</li>
+                <li>Semântica</li>
+                <li>Acessibilidade</li>
             </ul>
 
-            <h3>Dicionário Tech</h3>
+            <h3>Termos Técnicos</h3>
             <dl>
-                <dt>HTML</dt>
-                <dd>Linguagem de marcação para estruturar a web.</dd>
-                <dt>CSS</dt>
-                <dd>Linguagem de estilos para o design.</dd>
+                <dt>SEO</dt>
+                <dd>Otimização para motores de busca como o Google.</dd>
+                <dt>URL</dt>
+                <dd>O endereço de um recurso na rede.</dd>
             </dl>
         </section>
 
         <section id="multimidia">
-            <article>
-                <h2>Imagem em Destaque</h2>
-                <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Aurora boreal colorindo o céu noturno" width="400">
-            </article>
-
-            <article>
-                <h2>Vídeo e Áudio</h2>
-                <video controls width="300">
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos.
-                </video>
-                <br><br>
-                <audio controls>
-                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
-                </audio>
-            </article>
-        </section>
-
-        <section id="tabela">
-            <h2>Dados Pessoais</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Idade</th>
-                        <th>Cidade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>João</td>
-                        <td>20</td>
-                        <td>RJ</td>
-                    </tr>
-                    <tr>
-                        <td>Maria</td>
-                        <td>22</td>
-                        <td>SP</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="secao">
-            <h2>Seção interna</h2>
-            <p>Você clicou no link e veio parar aqui através de uma âncora.</p>
+            <h2>Galeria e Mídia</h2>
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Luzes da Aurora" width="300">
+            <br><br>
+            <video controls width="300">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
         </section>
 
         <section id="formulario">
-            <h2>Formulário de Cadastro</h2>
+            <h2>Formulário de Contato</h2>
             <form>
-                <label for="nome_user">Nome:</label><br>
-                <input type="text" id="nome_user" placeholder="Digite seu nome"><br><br>
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" placeholder="Seu nome">
+                </p>
 
-                <label for="email_user">Email:</label><br>
-                <input type="email" id="email_user" placeholder="seu@email.com"><br><br>
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                </p>
 
-                <fieldset>
-                    <legend>Sexo:</legend>
-                    <input type="radio" name="sexo" id="masc"> <label for="masc">Masculino</label>
-                    <input type="radio" name="sexo" id="fem"> <label for="fem">Feminino</label>
-                </fieldset>
-                <br>
+                <p>
+                    <label>Gênero:</label><br>
+                    <input type="radio" id="m" name="sexo"> <label for="m">Masculino</label>
+                    <input type="radio" id="f" name="sexo"> <label for="f">Feminino</label>
+                </p>
 
-                <fieldset>
-                    <legend>Conhecimentos:</legend>
-                    <input type="checkbox" id="h-html"> <label for="h-html">HTML</label>
-                    <input type="checkbox" id="h-css"> <label for="h-css">CSS</label>
-                </fieldset>
-                <br>
-
-                <button type="submit">Enviar Dados</button>
+                <button type="submit">Enviar</button>
             </form>
-        </section>
-
-        <section id="galeria">
-            <h2>Minha Galeria</h2>
-            <img src="https://via.placeholder.com/150" alt="Placeholder 1">
-            <img src="https://via.placeholder.com/150" alt="Placeholder 2">
-            <img src="https://via.placeholder.com/150" alt="Placeholder 3">
         </section>
     </main>
 
     <footer>
-        <h2>Redes sociais</h2>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="30" alt="Facebook"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="30" alt="Instagram"></a>
         <p>&copy; 2024 - Criado por Você</p>
     </footer>
 
